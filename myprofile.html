@@ -22,21 +22,12 @@
     padding: 0 16px !important;
 
 }
-@media(min-width:426px){
-  .desktop-submit{
-    display: block;
-  }
-  .mobile-submit{
-    display:none;
-  }
+
+@media(min-width:768px){
+  .card {
+    max-width: 60%;
+    margin: 0 auto;
 }
-@media(max-width:425px){
-  .desktop-submit{
-    display: none;
-  }
-  .mobile-submit{
-    display:block;
-  }
 }
 </style>
 </head>
@@ -71,13 +62,13 @@
               </a>
               <div class="collapse" id="collapseExample">
                 <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="myprofile.html">
+                  <li class="nav-item active">
+                    <a class="nav-link " href="user.html">
                       <span class="sidebar-mini"> MP </span>
                       <span class="sidebar-normal"> My Profile </span>
                     </a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item ">
                     <a class="nav-link" href="user.html">
                       <span class="sidebar-mini"> EP </span>
                       <span class="sidebar-normal"> Edit Profile </span>
@@ -232,7 +223,7 @@
                     <a class="dropdown-item" href="#">Another One</a>
                   </div>
                 </li>
-                <li class="nav-item dropdown ">
+                <li class="nav-item dropdown">
                   <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <i class="material-icons">person</i>
                     <p class="d-lg-none d-md-block">
@@ -255,89 +246,24 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-header card-header-icon card-header-rose">
-                  <div class="card-icon">
-                    <i class="material-icons">perm_identity</i>
+            <div class="col-md-12">
+                <div class="card card-profile">
+                  <div class="card-avatar">
+                    <a href="#pablo">
+                      <img class="img" src="../../assets/img/faces/marc.jpg" />
+                    </a>
                   </div>
-                  <h4 class="card-title">Edit Profile -
-                    <small class="category">Complete your profile</small>
-                  </h4>
+                  <div class="card-body">
+                    <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                    <h4 class="card-title">Alec Thompson</h4>
+                    <p class="card-description">
+                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                    </p>
+                    <a href="#pablo" class="btn btn-rose btn-round">Follow</a>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <form>
-                  <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Fist Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Username</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Email address</label>
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-6">
-                          <div class="form-group p-3">
-                            <label class="bmd-label-floating">Mobile Number</label>
-                            <input class="form-control" type="text" name="number" number="true" required="true" />
-                          </div>
-                          
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-3" style="
-                        padding-top: 4px;
-                    ">
-                            <select class="selectpicker" data-style="select-with-transition"  title="Gender" data-size="7" >
-                           
-                              <option value="2">Male </option>
-                              <option value="3">Female</option>
-  
-                            </select>
-                          </div>
-                          
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                    <div class="form-group p-3">
-                                      <input type="text" class="form-control datepicker" value="" placeholder="Date Of Birth">
-                                    </div>
-                                   
-                              </div>
-                        </div>
-                        <div class="row d-flex justify-content-center mobile-submit">
-                            <div class="pt-2"><button type="submit" class="btn btn-rose btn-round mobile-submit">Update Profile</button></div>
-                            
-                          
-                      </div>
-
-                      </div>
-                    </div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-rose pull-right desktop-submit">Update Profile</button>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
+              </div>
+            </div>
               </div>
             </div>
       <footer class="footer">
