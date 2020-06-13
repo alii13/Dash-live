@@ -17,6 +17,7 @@
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <body class="off-canvas-sidebar">
   <!-- Navbar -->
@@ -45,7 +46,7 @@
               Login
             </a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -328,6 +329,15 @@
       });
     });
   </script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="modal/js/mdb.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+     <!-- Your custom scripts (optional) -->
+     <script type="text/javascript">
+       $(function() {
+         $("#mdb-lightbox-ui").load("modal/mdb-addons/mdb-lightbox-ui.html");
+       });
+     </script>
   <script>
     $(document).ready(function() {
       md.checkFullPageBackgroundImage();

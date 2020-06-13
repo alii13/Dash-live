@@ -1,13 +1,24 @@
+<!--
+=========================================================
+Material Dashboard PRO - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard-pro
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Dashboard: Give My Certificate
+    Material Dashboard PRO by Creative Tim
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -30,27 +41,25 @@
         <div class="logo"><a href="https://givemycertificate.com/" class="simple-text logo-mini">
             GM
           </a>
-
-          <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            GivemyCertificate
-
+          <a href="https://givemycertificate.com/" class="simple-text logo-normal">
+            Give my Certificate
           </a></div>
         <div class="sidebar-wrapper">
           <div class="user">
             <div class="photo">
-              <img src="assets/img/faces/ravi.jpg" />
+              <img src="assets/img/faces/avatar.jpg" />
             </div>
-            <div class="user-info active">
+            <div class="user-info">
               <a data-toggle="collapse" href="#collapseExample" class="username">
                 <span>
-                  Ravi Goswami
+                  Tania Andrew
                   <b class="caret"></b>
                 </span>
               </a>
               <div class="collapse" id="collapseExample">
                 <ul class="nav">
                   <li class="nav-item">
-                    <a class="nav-link active" href="user.html">
+                    <a class="nav-link" href="user.html">
                       <span class="sidebar-mini"> MP </span>
                       <span class="sidebar-normal"> My Profile </span>
                     </a>
@@ -134,29 +143,24 @@
                                 <span class="sidebar-normal"> Send Certificate </span>
                               </a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="dashboard.html">
-                                  <span class="sidebar-mini"> DB </span>
-                                  <span class="sidebar-normal"> Dashboard </span>
-                                </a>
-                              </li>
                         </li>
                     
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item ">
-                  <a href="manage-certificate.html" class="nav-link">
-                    <i class="fa fa-certificate" aria-hidden="true"></i>
-                    <p> Manage Certificates</p>
-                  </a>
-                </li>
-                <li class="nav-item ">
-                  <a href="upcoming-events.html" class="nav-link">
-                    <i class="fa fa-id-card" aria-hidden="true"></i>
-                    <p> Upcoming Events</p>
-                  </a>
-                </li>
+  
+            <li class="nav-item ">
+              <a href="extended.html" class="nav-link">
+                <i class="material-icons">person_add</i>
+                <p> Manage Certificates</p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="login.html" class="nav-link">
+                <i class="material-icons">fingerprint</i>
+                <p> Upcoming Events</p>
+              </a>
+            </li>
             
   
           
@@ -174,7 +178,7 @@
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">User Profile</a>
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -228,7 +232,7 @@
                   <a class="dropdown-item" href="user.html">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="index.html">Log out</a>
+                  <a class="dropdown-item" href="login.html">Log out</a>
                 </div>
               </li>
             </ul>
@@ -237,117 +241,255 @@
       </nav>
       <!-- End Navbar -->
       <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
+        <div class="content">
+          <div class="container-fluid">
               <div class="card">
-                <div class="card-header card-header-icon card-header-rose">
-                  <div class="card-icon">
-                    <i class="material-icons">perm_identity</i>
+                  <div class="card-header card-header-tabs card-header-rose">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <span class="nav-tabs-title">Tasks:</span>
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#profile" data-toggle="tab">
+                              <i class="material-icons">bug_report</i> Bugs
+                              <div class="ripple-container"></div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#messages" data-toggle="tab">
+                              <i class="material-icons">code</i> Website
+                              <div class="ripple-container"></div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#settings" data-toggle="tab">
+                              <i class="material-icons">cloud</i> Server
+                              <div class="ripple-container"></div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <h4 class="card-title">Edit Profile -
-                    <small class="category">Complete your profile</small>
-                  </h4>
-                </div>
-                <div class="card-body">
-                  <form>
-                  <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Fist Name</label>
-                          <input type="text" class="form-control">
+                  <div class="card-body">
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="">
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="">
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                </td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control">
+                        <div class="tab-pane" id="messages">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                </td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="">
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="tab-pane" id="settings">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="">
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                </td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                <td class="td-actions text-right">
+                                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm">
+                                    <i class="material-icons">edit</i>
+                                  </button>
+                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
+                                    <i class="material-icons">close</i>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Username</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group p-3">
-                          <label class="bmd-label-floating">Email address</label>
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-6">
-                          <div class="form-group p-3">
-                            <label class="bmd-label-floating">Mobile Number</label>
-                            <input class="form-control" type="text" name="number" number="true" required="true" />
-                          </div>
-                          
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-3" style="
-                        padding-top: 4px;
-                    ">
-                            <select class="selectpicker" data-style="select-with-transition"  title="Gender" data-size="7" >
-                           
-                              <option value="2">Male </option>
-                              <option value="3">Female</option>
-  
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                    <div class="form-group p-3">
-                                      <input type="text" class="form-control datepicker" value="" placeholder="Date Of Birth">
-                                    </div>
-                                   
-                              </div>
-                        </div>
-                  </form>
-
-                      </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating"> Tell us about yourself .</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-rose pull-right">Update Profile</button>
-                    <div class="clearfix"></div>
-                  </form>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="assets/img/faces/ravi2.jpg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category text-gray">Co-Founder</h6>
-                  <h4 class="card-title">Ravi Goswami</h4>
-                  <p class="card-description">
-                    Give My Certificate offer an advanced platform for digital certificate.
-Our main aim is to digitise the certificate albite old school paper printing. We give full assurance for the fact that it is environment friendly and will carry the same authenticity as the paper document. 
-                  </p>
-                  <!-- <a href="#pablo" class="btn btn-rose btn-round">Follow</a> -->
-                </div>
-              </div>
-            </div>
           </div>
+
         </div>
       </div>
       <footer class="footer">
@@ -355,23 +497,23 @@ Our main aim is to digitise the certificate albite old school paper printing. We
           <nav class="float-left">
             <ul>
               <li>
-                <a href="#">
-                   <!--Comment for future modification-->
+                <a href="https://www.creative-tim.com/">
+                <!--Creative Tim-->  
                 </a>
               </li>
               <li>
-                <a href="#">
-                <!--Comment for future modification-->
+                <a href="https://www.creative-tim.com/presentation">
+                  <!--About Us-->
                 </a>
               </li>
               <li>
-                <a href="#">
-               <!--Comment for future modification-->
+                <a href="https://www.creative-tim.com/blog">
+                  <!--About Us-->
                 </a>
               </li>
               <li>
-                <a href="#">
-                 <!--Comment for future modification-->
+                <a href="https://www.creative-tim.com/license">
+                  <!--About Us-->
                 </a>
               </li>
             </ul>
@@ -381,7 +523,7 @@ Our main aim is to digitise the certificate albite old school paper printing. We
             <script>
               document.write(new Date().getFullYear())
             </script>, made with <i class="material-icons">favorite</i> by
-            <a href="#" target="_blank">Givemycertificate</a>.
+            <a href="https://www.creative-tim.com/" target="_blank">Givemycertificate</a>.
           </div>
         </div>
       </footer>
@@ -405,11 +547,8 @@ Our main aim is to digitise the certificate albite old school paper printing. We
   <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
   <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
   <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
-    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-    <script src="../../assets/js/plugins/bootstrap-selectpicker.js"></script>
   <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
   <script src="assets/js/plugins/jquery.dataTables.min.js"></script>
-  <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
   <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
   <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
   <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
@@ -607,18 +746,13 @@ Our main aim is to digitise the certificate albite old school paper printing. We
   </script>
   <script>
     $(document).ready(function() {
-      md.checkFullPageBackgroundImage();
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+      md.initVectorMap();
+
     });
   </script>
-    <script>
-        $(document).ready(function() {
-          // initialise Datetimepicker and Sliders
-          md.initFormExtendedDatetimepickers();
-          if ($('.slider').length != 0) {
-            md.initSliders();
-          }
-        });
-      </script>
 </body>
 
 </html>

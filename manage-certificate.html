@@ -28,6 +28,93 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Material Design Bootstrap -->
+<link rel="stylesheet" href="css/mdb.min.css" />
+<!-- Your custom styles (optional) -->
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <style>
+  .swal2-popup.swal2-modal.swal2-show {
+    height: 90vh;
+    width: 85vw;
+}
+.modal-content {
+    width: 95vw;
+}
+.side{
+  height: fit-content;
+
+
+}
+.lead {
+    font-size: 2.3vmin ;
+}
+.tab-content{
+  padding:1rem !important;
+
+}
+.gg{
+  color: white;
+  font-size: 1.1em;
+}
+.gg:hover{
+  color: #f1e5e5 !important;
+}
+.gg::after{
+  border-bottom: 0.5px solid white;
+}
+.gg:active,.gg:visited,.gg:focus{
+  color: white !important;
+}
+
+@media(max-width:476px){
+  .modal-body {
+    height: 700px;
+}
+.boxi{
+  display: block;
+}
+.modal-body{
+  padding: 0 !important;
+}
+
+
+}
+@media(max-width:768px){
+
+  .table-responsive{
+    z-index: 10056;
+  }
+}
+@media (min-width: 576px){
+.modal-dialog {
+ margin: 0.5rem !important;
+}
+.clear{
+  font-size: 25px !important;
+}
+.modal-content{
+  margin-left: 0.7vw !important;
+}
+.boxi{
+  display: flex;
+  justify-content: center;
+}
+.side{
+  top:20vh !important;
+}
+
+}</style>
 </head>
 
 <body class="">
@@ -81,31 +168,99 @@ The above copyright notice and this permission notice shall be included in all c
             </div>
           </div>
           <ul class="nav">
-            <li class="nav-item  ">
-              <a class="nav-link" href="dashboard.html">
-                <i class="material-icons">dashboard</i>
-                <p> Dashboard </p>
-              </a>
-            </li>
+              <li class="nav-item active ">
+                  <a class="nav-link collapsed" data-toggle="collapse" href="#componentsExamples" aria-expanded="false">
+                    <i class="material-icons">apps</i>
+                    <p> dashboard
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="componentsExamples" style="">
+                    <ul class="nav">
+                      <li class="nav-item  ">
+                        <a class="nav-link" data-toggle="collapse" href="#orgnaisation" aria-expanded="false">
+                          <span class="sidebar-mini"> ORG </span>
+                          <span class="sidebar-normal"> Orgnaisation
+                            <b class="caret"></b>
+                          </span>
+                        </a>
+                        <div class="collapse" id="orgnaisation">
+                          <ul class="nav">
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#0">
+                                <span class="sidebar-mini"> CO </span>
+                                <span class="sidebar-normal"> Create Orgnaisation </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#0">
+                                  <span class="sidebar-mini"> MO </span>
+                                  <span class="sidebar-normal"> Manage Orgnaisation </span>
+                                </a>
+                              </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item  ">
+                          <a class="nav-link" data-toggle="collapse" href="#events" aria-expanded="false">
+                            <span class="sidebar-mini"> EV </span>
+                            <span class="sidebar-normal"> Events
+                              <b class="caret"></b>
+                            </span>
+                          </a>
+                          <div class="collapse" id="events">
+                            <ul class="nav">
+                              <li class="nav-item ">
+                                <a class="nav-link" href="#0">
+                                  <span class="sidebar-mini"> CE </span>
+                                  <span class="sidebar-normal"> Create Event </span>
+                                </a>
+                              </li>
+                              <li class="nav-item ">
+                                  <a class="nav-link" href="../../examples/components/buttons.html">
+                                    <span class="sidebar-mini"> ME </span>
+                                    <span class="sidebar-normal"> Manage Event </span>
+                                  </a>
+                                </li>
+                            </ul>
+                          </div>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#0">
+                                <span class="sidebar-mini"> SC </span>
+                                <span class="sidebar-normal"> Send Certificate </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="dashboard.html">
+                                  <span class="sidebar-mini"> DB </span>
+                                  <span class="sidebar-normal"> Dashboard </span>
+                                </a>
+                              </li>
+                        </li>
+                    
+                    </ul>
+                  </div>
+                </li>
   
-            <li class="nav-item active ">
-              <a href="extended.html" class="nav-link">
-                <i class="material-icons">person_add</i>
-                <p> Manage Certificates</p>
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a href="login.html" class="nav-link">
-                <i class="material-icons">fingerprint</i>
-                <p> Upcoming Events</p>
-              </a>
-            </li>
+                <li class="nav-item ">
+                  <a href="manage-certificate.html" class="nav-link">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <p> Manage Certificates</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="upcoming-events.html" class="nav-link">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p> Upcoming Events</p>
+                  </a>
+                </li>
             
   
           
           </ul>
         </div>
       </div>
+
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -117,7 +272,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Extended Tables</a>
+            <a class="navbar-brand" href="javascript:;">Manage Certificates</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -171,7 +326,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
+                  <a class="dropdown-item" href="index.html">Log out</a>
                 </div>
               </li>
             </ul>
@@ -188,7 +343,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <div class="card-icon">
                     <i class="material-icons">assignment</i>
                   </div>
-                  <h4 class="card-title">Simple Table</h4>
+                  <h4 class="card-title"> Manage Certificates</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -213,15 +368,13 @@ The above copyright notice and this permission notice shall be included in all c
                           <td >&euro; 99,225</td>
                           <td >kdfjidhrijhedlehrlliuerhfejdbnfkjleh</td>
                           <td class="td-actions text-right">
-                            <button type="button" rel="tooltip" class="btn btn-info">
-                              <i class="material-icons">person</i>
+                            <button type="button" rel="tooltip" class="btn btn-info" data-toggle="modal" data-target="#Modal">
+                              <i class="fas fa-eye"></i> View
                             </button>
-                            <button type="button" rel="tooltip" class="btn btn-success">
-                              <i class="material-icons">edit</i>
+                            <button type="button" rel="tooltip" class="btn btn-success" >
+                              <i class="material-icons" >edit</i> Edit
                             </button>
-                            <button type="button" rel="tooltip" class="btn btn-danger">
-                              <i class="material-icons">close</i>
-                            </button>
+                           
                           </td>
                         </tr>
                         <tr>
@@ -232,15 +385,13 @@ The above copyright notice and this permission notice shall be included in all c
                             <td >&euro; 99,225</td>
                             <td >kdfjidhrijhedlehrlliuerhfejdbnfkjleh</td>
                             <td class="td-actions text-right">
-                              <button type="button" rel="tooltip" class="btn btn-info">
-                                <i class="material-icons">person</i>
+                              <button type="button" rel="tooltip" class="btn btn-info" data-toggle="modal" data-target="#Modal">
+                                <i class="fas fa-eye"></i> View
                               </button>
                               <button type="button" rel="tooltip" class="btn btn-success">
-                                <i class="material-icons">edit</i>
+                                <i class="material-icons">edit</i> Edit
                               </button>
-                              <button type="button" rel="tooltip" class="btn btn-danger">
-                                <i class="material-icons">close</i>
-                              </button>
+                              
                             </td>
                           </tr>
                           <tr>
@@ -252,14 +403,12 @@ The above copyright notice and this permission notice shall be included in all c
                               <td >kdfjidhrijhedlehrlliuerhfejdbnfkjleh</td>
                               <td class="td-actions text-right">
                                 <button type="button" rel="tooltip" class="btn btn-info">
-                                  <i class="material-icons">person</i>
+                                  <i class="fas fa-eye"></i> View
                                 </button>
-                                <button type="button" rel="tooltip" class="btn btn-success">
-                                  <i class="material-icons">edit</i>
+                                <button type="button" rel="tooltip" class="btn btn-success" data-toggle="modal" data-target="#Modal">
+                                  <i class="material-icons">edit</i> Edit
                                 </button>
-                                <button type="button" rel="tooltip" class="btn btn-danger">
-                                  <i class="material-icons">close</i>
-                                </button>
+                                
                               </td>
                             </tr>
 
@@ -274,6 +423,147 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>
       </div>
+      <div class="modal fade" id="Modal" tabindex="-1" role="">
+        <div class="modal-dialog modal-login" role="document">
+            <div class="modal-content">
+                <div class="card card-signup card-plain">
+                    <div class="modal-header">
+                      <div class="card-header card-header-rose text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          <i class="material-icons clear">clear</i>
+                        </button>
+    
+                        <h4 class="card-title p-3">Certificate Corner</h4>
+                        <div class="social-line">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-md-12">
+                                <div id="mdb-lightbox-ui"></div>
+                        
+                                <div class="mdb-lightbox">
+                                  <div class="container-fluid box">
+                                    <div class="row image-box">
+                                      <div class="container col-md-9 align-self-center humb">
+                                        <figure class="col-md-12 padder  ">
+                                          <a
+                                            href="img/Corona Warrior.webp"
+                                            class="topper"
+                                            data-size="1600x1067"
+                                          >
+                                            <img
+                                              src="img/Corona Warrior.webp"
+                                              data-size="1600x1067"
+                                              alt="placeholder"
+                                              class="img-fluid image-certificate view overlay rounded z-depth-4 swing-in-top-fwd"
+                                            />
+                                          </a>
+                                        </figure>
+                                      </div>
+                                      <div class="col-md-3 side">
+                                        <div class="container">
+                                          <!-- Section: Block Content -->
+                                          <section>
+                                            <!-- Modal -->
+                                            <div
+                                              class="modal fade"
+                                              id="modal1"
+                                              tabindex="-1"
+                                              role="dialog"
+                                              aria-labelledby="exampleModalLabel"
+                                              aria-hidden="true"
+                                            >
+                                              <div
+                                                class="modal-dialog modal-lg modal-dialog-centered"
+                                                role="document"
+                                              >
+                                                <div class="modal-content">
+                                                  <div
+                                                    class="embed-responsive embed-responsive-16by9 z-depth-1-half"
+                                                  >
+                                                    <div class="container qr-box">
+                                                      <img
+                                                        src="img/websiteQRCode_noFrame.png"
+                                                        alt="placeholder"
+                                                        class="img-fluid  rounded z-depth-4 qr"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class=" mt-3">
+                                            
+                                              <p class="lead text-center text-muted pt-2 ">
+                                                Share your Corona Warrior certificate with pride and
+                                                lead the way for others
+                                              </p>
+                                              
+                                              <div class=" text-center mb-3">
+                                                  <div class="card">
+                                                      <div class="card-header card-header-tabs card-header-rose hu">
+                                                        <div class="boxi">
+                                                         
+                                                              <a class="nav-link gg" href="#settings" data-toggle="tab">
+                                                                  <i class="fa fa-file-text" aria-hidden="true"></i> Create New
+                                                                <div class="ripple-container"></div>
+                                                              </a>
+                                                              <a class="nav-link gg" href="#settings" data-toggle="tab">
+                                                                  <i class="fa fa-download" aria-hidden="true"></i> Download
+                                                                  <div class="ripple-container"></div>
+                                                                </a>
+                                                              </div>
+                                                           
+                                                      </div>
+                                                      <div class="card-body">
+                                                          <div class="tab-content">
+                                                            <div class="tab-pane active" id="profile">
+                                                                <a
+                                                                type="button"
+                                                                class="btn-floating btn-success btn-sm"
+                                                              >
+                                                                <i class="fab fa-whatsapp"></i>
+                                                              </a>
+                                                              <a type="button" class="btn-floating btn-fb btn-sm">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                              </a>
+                                                              <a type="button" class="btn-floating btn-tw btn-sm">
+                                                                <i class="fab fa-twitter"></i>
+                                                              </a>
+                                                              <a type="button" class="btn-floating btn-li btn-sm">
+                                                                <i class="fab fa-linkedin-in"></i>
+                                                              </a>
+                                                              
+                                                            </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                             
+                                              </div>
+                        
+                                          
+                        
+                                             
+                                            </div>
+                                          </section>
+                                          <!-- Section: Block Content -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
@@ -456,6 +746,18 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="assets/demo/demo.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <!-- Your custom scripts (optional) -->
+      <script type="text/javascript">
+        $(function() {
+          $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+      </script>
+  
   <script>
     $(document).ready(function() {
       $().ready(function() {
@@ -627,6 +929,12 @@ The above copyright notice and this permission notice shall be included in all c
       });
     });
   </script>
+    <script>
+        $(document).ready(function() {
+          // Initialise Sweet Alert library
+          demo.showSwal();
+        });
+      </script>
 </body>
 
 </html>
