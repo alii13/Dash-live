@@ -28,6 +28,11 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+  <style>
+  .z-depth-3{
+  
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.36) !important;
+  }</style>
 </head>
 
 <body class="">
@@ -81,22 +86,84 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>
         <ul class="nav">
-          <li class="nav-item active ">
-            <a class="nav-link" href="dashboard.html">
-              <i class="material-icons">dashboard</i>
-              <p> Dashboard </p>
-            </a>
-          </li>
+            <li class="nav-item active ">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#componentsExamples" aria-expanded="false">
+                  <i class="material-icons">apps</i>
+                  <p> dashboard
+                    <b class="caret"></b>
+                  </p>
+                </a>
+                <div class="collapse" id="componentsExamples" style="">
+                  <ul class="nav">
+                    <li class="nav-item  ">
+                      <a class="nav-link" data-toggle="collapse" href="#orgnaisation" aria-expanded="false">
+                        <span class="sidebar-mini"> ORG </span>
+                        <span class="sidebar-normal"> Orgnaisation
+                          <b class="caret"></b>
+                        </span>
+                      </a>
+                      <div class="collapse" id="orgnaisation">
+                        <ul class="nav">
+                          <li class="nav-item ">
+                            <a class="nav-link" href="#0">
+                              <span class="sidebar-mini"> CO </span>
+                              <span class="sidebar-normal"> Create Orgnaisation </span>
+                            </a>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#0">
+                                <span class="sidebar-mini"> MO </span>
+                                <span class="sidebar-normal"> Manage Orgnaisation </span>
+                              </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" data-toggle="collapse" href="#events" aria-expanded="false">
+                          <span class="sidebar-mini"> EV </span>
+                          <span class="sidebar-normal"> Events
+                            <b class="caret"></b>
+                          </span>
+                        </a>
+                        <div class="collapse" id="events">
+                          <ul class="nav">
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#0">
+                                <span class="sidebar-mini"> CE </span>
+                                <span class="sidebar-normal"> Create Event </span>
+                              </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../../examples/components/buttons.html">
+                                  <span class="sidebar-mini"> ME </span>
+                                  <span class="sidebar-normal"> Manage Event </span>
+                                </a>
+                              </li>
+                          </ul>
+                        </div>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#0">
+                              <span class="sidebar-mini"> SC </span>
+                              <span class="sidebar-normal"> Send Certificate </span>
+                            </a>
+                          </li>
+                          
+                      </li>
+                  
+                  </ul>
+                </div>
+              </li>
 
           <li class="nav-item ">
-            <a href="extended.html" class="nav-link">
-              <i class="material-icons">person_add</i>
+            <a href="manage-certificate.html" class="nav-link">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
               <p> Manage Certificates</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a href="login.html" class="nav-link">
-              <i class="material-icons">fingerprint</i>
+            <a href="upcoming-events.html" class="nav-link">
+              <i class="fa fa-id-card" aria-hidden="true"></i>
               <p> Upcoming Events</p>
             </a>
           </li>
@@ -171,7 +238,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <a class="dropdown-item" href="user.html">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="login.html">Log out</a>
+                  <a class="dropdown-item" href="index.html">Log out</a>
                 </div>
               </li>
             </ul>
@@ -182,131 +249,72 @@ The above copyright notice and this permission notice shall be included in all c
       <div class="content">
         <div class="content">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card ">
-                  <div class="card-header card-header-success card-header-icon">
-                    <div class="card-icon">
-                      <i class="material-icons"></i>
-                    </div>
-                    <h4 class="card-title">Global Sales by Top Locations</h4>
-                  </div>
-                  <div class="card-body ">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="table-responsive table-sales">
-                          <table class="table">
-                            <tbody>
-                              <!--<tr>
-                                <td>
-                                  <div class="flag">
-                                    <img src="assets/img/flags/US.png" </div>
-                                </td>
-                                <td>USA</td>
-                                <td class="text-right">
-                                  2.920
-                                </td>
-                                <td class="text-right">
-                                  53.23%
-                                </td>
-                              </tr>-->
-                             
-                            </tbody>
-                          </table>
+             <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Notifications Style</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card card-stats z-depth-3">
+                        <div class="card-header card-header-rose card-header-icon">
+                          <div class="card-icon">
+                            <i class="material-icons">equalizer</i>
+                          </div>
+                          <p class="card-category">Number Of Certificates</p>
+                          <h3 class="card-title">75.521</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="stats">
+                            <i class="material-icons">local_offer</i> Tracked from Google Analytics
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-6 ml-auto mr-auto">
-                        <!--<div id="worldMap" style="height: 300px;"></div>-->
+                      <div class="card card-stats z-depth-3">
+                          <div class="card-header card-header-success card-header-icon">
+                            <div class="card-icon">
+                              <i class="material-icons">store</i>
+                            </div>
+                            <p class="card-category">Upcoming Events</p>
+                            <h3 class="card-title">34,245</h3>
+                          </div>
+                          <div class="card-footer">
+                            <div class="stats">
+                              <i class="material-icons">date_range</i> Last 24 Hours
+                            </div>
+                          </div>
+                        </div>
+    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Notification states</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-rose alert-with-icon" data-notify="container">
+                        <i class="material-icons" data-notify="icon">notifications</i>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <i class="material-icons">close</i>
+                        </button>
+                        <span data-notify="message">This is a notification with close button and icon and is made with ".alert-rose". You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
                       </div>
-                    </div>
-                  </div>
+                      <div class="alert alert-success alert-with-icon" data-notify="container">
+                          <i class="material-icons" data-notify="icon">notifications</i>
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="material-icons">close</i>
+                          </button>
+                          <span data-notify="message">This is a notification with close button and icon and is made with ".alert-rose". You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
+                        </div>
+
                 </div>
               </div>
             </div>
-            <div class="row">
-              <!--<div class="col-md-4">
-                <div class="card card-chart">
-                  <div class="card-header card-header-rose" data-header-animation="true">
-                    <div class="ct-chart" id="websiteViewsChart"></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="card-actions">
-                      <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                        <i class="material-icons">build</i> Fix Header!
-                      </button>
-                      <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                        <i class="material-icons">refresh</i>
-                      </button>
-                      <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                        <i class="material-icons">edit</i>
-                      </button>
-                    </div>
-                    <h4 class="card-title">Website Views</h4>
-                    <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                    <div class="stats">
-                      <i class="material-icons">access_time</i> campaign sent 2 days ago
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-chart">
-                  <div class="card-header card-header-success" data-header-animation="true">
-                    <div class="ct-chart" id="dailySalesChart"></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="card-actions">
-                      <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                        <i class="material-icons">build</i> Fix Header!
-                      </button>
-                      <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                        <i class="material-icons">refresh</i>
-                      </button>
-                      <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                        <i class="material-icons">edit</i>
-                      </button>
-                    </div>
-                    <h4 class="card-title">Daily Sales</h4>
-                    <p class="card-category">
-                      <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                  </div>
-                  <div class="card-footer">
-                    <div class="stats">
-                      <i class="material-icons">access_time</i> updated 4 minutes ago
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-chart">
-                  <div class="card-header card-header-info" data-header-animation="true">
-                    <div class="ct-chart" id="completedTasksChart"></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="card-actions">
-                      <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                        <i class="material-icons">build</i> Fix Header!
-                      </button>
-                      <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                        <i class="material-icons">refresh</i>
-                      </button>
-                      <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                        <i class="material-icons">edit</i>
-                      </button>
-                    </div>
-                    <h4 class="card-title">Completed Tasks</h4>
-                    <p class="card-category">Last Campaign Performance</p>
-                  </div>
-                  <div class="card-footer">
-                    <div class="stats">
-                      <i class="material-icons">access_time</i> campaign sent 2 days ago
-                    </div>
-                  </div>
-                </div>
-              </div>-->
-            </div>
+
+             </div>
+        
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
