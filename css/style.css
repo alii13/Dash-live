@@ -10,9 +10,7 @@ body {
 .col-md-9 .container img {
   height: 100%;
 }
-ul.nav.navbar-nav.nav-mobile-menu {
-  display: none;
-}
+
 figure.col-md-12.padder {
   display: flex;
   justify-content: center;

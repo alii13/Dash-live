@@ -56,6 +56,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 
 }
+ul.nav.navbar-nav.nav-mobile-menu {
+  display: none;
+}
 body{
       background-color: #eee !important;
     }
@@ -187,77 +190,12 @@ body{
           </div>
           <ul class="nav">
               <li class="nav-item ">
-                  <a class="nav-link collapsed" data-toggle="collapse" href="#componentsExamples" aria-expanded="false">
+                  <a class="nav-link " href="dashboard.html">
                     <i class="material-icons">apps</i>
                     <p> dashboard
-                      <b class="caret"></b>
+                    
                     </p>
                   </a>
-                  <div class="collapse" id="componentsExamples" style="">
-                    <ul class="nav">
-                      <li class="nav-item  ">
-                        <a class="nav-link" data-toggle="collapse" href="#orgnaisation" aria-expanded="false">
-                          <span class="sidebar-mini"> ORG </span>
-                          <span class="sidebar-normal"> Orgnaisation
-                            <b class="caret"></b>
-                          </span>
-                        </a>
-                        <div class="collapse" id="orgnaisation">
-                          <ul class="nav">
-                            <li class="nav-item ">
-                              <a class="nav-link" href="#0">
-                                <span class="sidebar-mini"> CO </span>
-                                <span class="sidebar-normal"> Create Orgnaisation </span>
-                              </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#0">
-                                  <span class="sidebar-mini"> MO </span>
-                                  <span class="sidebar-normal"> Manage Orgnaisation </span>
-                                </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="nav-item  ">
-                          <a class="nav-link" data-toggle="collapse" href="#events" aria-expanded="false">
-                            <span class="sidebar-mini"> EV </span>
-                            <span class="sidebar-normal"> Events
-                              <b class="caret"></b>
-                            </span>
-                          </a>
-                          <div class="collapse" id="events">
-                            <ul class="nav">
-                              <li class="nav-item ">
-                                <a class="nav-link" href="#0">
-                                  <span class="sidebar-mini"> CE </span>
-                                  <span class="sidebar-normal"> Create Event </span>
-                                </a>
-                              </li>
-                              <li class="nav-item ">
-                                  <a class="nav-link" href="../../examples/components/buttons.html">
-                                    <span class="sidebar-mini"> ME </span>
-                                    <span class="sidebar-normal"> Manage Event </span>
-                                  </a>
-                                </li>
-                            </ul>
-                          </div>
-                          <li class="nav-item ">
-                              <a class="nav-link" href="#0">
-                                <span class="sidebar-mini"> SC </span>
-                                <span class="sidebar-normal"> Send Certificate </span>
-                              </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="dashboard.html">
-                                  <span class="sidebar-mini"> DB </span>
-                                  <span class="sidebar-normal"> Dashboard </span>
-                                </a>
-                              </li>
-                        </li>
-                    
-                    </ul>
-                  </div>
                 </li>
   
                 <li class="nav-item active ">
@@ -290,7 +228,7 @@ body{
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Manage Certificates</a>
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -308,40 +246,9 @@ body{
                 </button>
               </div>
             </form>
-            <ul class="navbar-nav">
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">notifications</i>
-                    <span class="notification">5</span>
-                    <p class="d-lg-none d-md-block">
-                      Notifications
-                    </p>
-                  <div class="ripple-container"></div></a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                    <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                    <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                    <a class="dropdown-item" href="#">Another Notification</a>
-                    <a class="dropdown-item" href="#">Another One</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown ">
-                  <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <i class="material-icons">person</i>
-                    <p class="d-lg-none d-md-block">
-                      Account
-                    </p>
-                  <div class="ripple-container"></div></a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <a class="dropdown-item" href="#">Settings</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index.html">Log out</a>
-                  </div>
-                </li>
-              </ul>
-          
+            
+           
+    
           </div>
         </div>
       </nav>

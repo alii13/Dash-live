@@ -22,21 +22,14 @@
     padding: 0 16px !important;
 
 }
+
 @media(min-width:426px){
-  .desktop-submit{
-    display: block;
-  }
-  .mobile-submit{
-    display:none;
-  }
+
+  .profile{
+  max-width: 60%;
+  margin: 0 auto;
+ 
 }
-@media(max-width:425px){
-  .desktop-submit{
-    display: none;
-  }
-  .mobile-submit{
-    display:block;
-  }
 }
 </style>
 </head>
@@ -95,77 +88,12 @@
           </div>
           <ul class="nav">
               <li class="nav-item  ">
-                  <a class="nav-link collapsed" data-toggle="collapse" href="#componentsExamples" aria-expanded="false">
+                  <a class="nav-link collapsed" href="dashboard.html">
                     <i class="material-icons">apps</i>
                     <p> dashboard
-                      <b class="caret"></b>
+                   
                     </p>
                   </a>
-                  <div class="collapse" id="componentsExamples" style="">
-                    <ul class="nav">
-                      <li class="nav-item  ">
-                        <a class="nav-link" data-toggle="collapse" href="#orgnaisation" aria-expanded="false">
-                          <span class="sidebar-mini"> ORG </span>
-                          <span class="sidebar-normal"> Orgnaisation
-                            <b class="caret"></b>
-                          </span>
-                        </a>
-                        <div class="collapse" id="orgnaisation">
-                          <ul class="nav">
-                            <li class="nav-item ">
-                              <a class="nav-link" href="#0">
-                                <span class="sidebar-mini"> CO </span>
-                                <span class="sidebar-normal"> Create Orgnaisation </span>
-                              </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#0">
-                                  <span class="sidebar-mini"> MO </span>
-                                  <span class="sidebar-normal"> Manage Orgnaisation </span>
-                                </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="nav-item  ">
-                          <a class="nav-link" data-toggle="collapse" href="#events" aria-expanded="false">
-                            <span class="sidebar-mini"> EV </span>
-                            <span class="sidebar-normal"> Events
-                              <b class="caret"></b>
-                            </span>
-                          </a>
-                          <div class="collapse" id="events">
-                            <ul class="nav">
-                              <li class="nav-item ">
-                                <a class="nav-link" href="#0">
-                                  <span class="sidebar-mini"> CE </span>
-                                  <span class="sidebar-normal"> Create Event </span>
-                                </a>
-                              </li>
-                              <li class="nav-item ">
-                                  <a class="nav-link" href="../../examples/components/buttons.html">
-                                    <span class="sidebar-mini"> ME </span>
-                                    <span class="sidebar-normal"> Manage Event </span>
-                                  </a>
-                                </li>
-                            </ul>
-                          </div>
-                          <li class="nav-item ">
-                              <a class="nav-link" href="#0">
-                                <span class="sidebar-mini"> SC </span>
-                                <span class="sidebar-normal"> Send Certificate </span>
-                              </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="dashboard.html">
-                                  <span class="sidebar-mini"> DB </span>
-                                  <span class="sidebar-normal"> Dashboard </span>
-                                </a>
-                              </li>
-                        </li>
-                    
-                    </ul>
-                  </div>
                 </li>
                 <li class="nav-item ">
                   <a href="manage-certificate.html" class="nav-link">
@@ -254,8 +182,8 @@
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
+          <div class="row profile">
+            <div class="col-md-12 ">
               <div class="card">
                 <div class="card-header card-header-icon card-header-rose">
                   <div class="card-icon">
@@ -324,8 +252,8 @@
                                    
                               </div>
                         </div>
-                        <div class="row d-flex justify-content-center mobile-submit">
-                            <div class="pt-2"><button type="submit" class="btn btn-rose btn-round mobile-submit">Update Profile</button></div>
+                        <div class="row d-flex justify-content-center ">
+                          <button type="submit" class="btn btn-rose btn-round pull-right desktop-submit">Update Profile</button>
                             
                           
                       </div>
@@ -334,7 +262,7 @@
                     </div>
                     </div>
                     
-                    <button type="submit" class="btn btn-rose pull-right desktop-submit">Update Profile</button>
+                   
                     <div class="clearfix"></div>
                   </form>
                 </div>
