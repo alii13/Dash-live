@@ -26,17 +26,22 @@
   max-width: fit-content;
     margin: 0px  auto !important;
 }
-.btn-social{
-  margin: 0 4px;
+.soci{
+  padding-bottom: 20px;
+ 
+}.boo{
+  padding: 0.9375rem 35px !important ;
 }
+.form-horizontal .row{
+  padding: 0.3rem 0 !important;
+
+}
+
+
 
 @media(min-width:426px){
 
-  .profile{
-  max-width: 60%;
-  margin: 0 auto;
  
-}
 }
 </style>
 </head>
@@ -190,7 +195,7 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row profile">
-            <div class="col-md-12 ">
+            <div class="col-md-7 ">
               <div class="card">
                 <div class="card-header card-header-icon card-header-rose">
                   <div class="card-icon">
@@ -301,30 +306,7 @@
                                   </div>
                               </div>
                           </div>-->
-                          <div class="row">
-                              <div class="col-md-12">
-                                  
-                                    <div class="card-footer sharechat">
-                                      <button class="btn btn-social btn-just-icon btn-round btn-success p-2">
-                                        <i class="fa fa-whatsapp"></i>
-                                      </button>
-                                      <button class="btn btn-social btn-just-icon btn-round btn-facebook p-2">
-                                        <i class="fa fa-facebook"> </i>
-                                      </button>
-                                      <button class="btn btn-social btn-just-icon btn-round btn-twitter p-2">
-                                        <i class="fa fa-twitter"></i>
-                                      </button>
-                                      <button class="btn btn-social btn-just-icon btn-round btn-linkedin p-2">
-                                        <i class="fa fa-linkedin"></i>
-                                      </button>
-                                      <button class="btn btn-social btn-just-icon btn-round btn-danger p-2">
-                                          <i class="fa fa-instagram"></i>
-                                        </button>
-                                    </div>
-                                  
-                                </div>
-                                
-                          </div>
+                        
                         <div class="row d-flex justify-content-center mt-3">
                           <button type="submit" class="btn btn-rose btn-round pull-right desktop-submit">Update Profile</button>
                             
@@ -338,6 +320,74 @@
                    
                     <div class="clearfix"></div>
                   </form>
+                  <div class="col-md-5">
+                    <div class="card soci">
+                      <div class="card-header card-header-rose card-header-icon">
+                        <div class="card-icon">
+                          <i class="material-icons">contacts</i>
+                        </div>
+                        <h4 class="card-title">Social Accounts</h4>
+                      </div>
+                      <div class="card-body boo ">
+                        <form class="form-horizontal">
+                         
+                          <div class="row">
+                            <label class="col-md-3 col-form-label p-0"><button class="btn btn-social btn-just-icon btn-round btn-success">
+                              <i class="fa fa-whatsapp"></i>
+                            </button></label>
+                            <div class="col-md-8">
+                              <div class="form-group has-default">
+                                <input type="text" class="form-control" placeholder="Add your WhatsApp Account">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label class="col-md-3 col-form-label p-0"><button class="btn btn-social btn-just-icon btn-round btn-danger">
+                              <i class="fa fa-instagram"></i>
+                            </button></label>
+                            <div class="col-md-8">
+                              <div class="form-group has-default">
+                                <input type="text" class="form-control"placeholder="Add your Instagram Account">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label class="col-md-3 col-form-label p-0"><button class="btn btn-social btn-just-icon btn-round btn-facebook p-2">
+                              <i class="fa fa-facebook"> </i>
+                            </button></label>
+                            <div class="col-md-8">
+                              <div class="form-group has-default">
+                                <input type="text" class="form-control" placeholder="Add your Facebook Account">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label class="col-md-3 col-form-label p-0"><button class="btn btn-social btn-just-icon btn-round btn-linkedin p-2">
+                              <i class="fa fa-linkedin"> </i>
+                            </button></label>
+                            <div class="col-md-8">
+                              <div class="form-group has-default">
+                                <input type="text" class="form-control" placeholder="Add your Linkedin Account">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label class="col-md-3 col-form-label p-0"><button class="btn btn-social btn-just-icon btn-round btn-twitter k p-2">
+                              <i class="fa fa-twitter"> </i>
+                            </button></label>
+                            <div class="col-md-8">
+                              <div class="form-group has-default">
+                                <input type="text" class="form-control" placeholder="Add your Twitter Account">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row d-flex justify-content-center">
+                              <button type="submit" class="btn btn-rose btn-round pull-right desktop-submit">Update Accounts</button>
+                                
+                          </div>
+                            
+                        </form>
+                          
                 </div>
               </div>
             </div>
