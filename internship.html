@@ -1,24 +1,13 @@
-<!--
-=========================================================
-Material Dashboard PRO - v2.1.2
-=========================================================
-
-Product Page: https://www.creative-tim.com/product/material-dashboard-pro
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
-
-=========================================================
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.ico">
-  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-      Dashboard: Give My Certificate
+    User: Give My Certificate
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -29,108 +18,135 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
   <style>
-  .z-depth-3{
-  
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.36) !important;
-  }
-  .noti{
-    min-height: 250px;
-  }
-  .noo{
-    position: absolute;
-    top: 30%;
-    z-index: 1;
+  .dropdown.bootstrap-select {
+    padding: 0 16px !important;
 
+}
+.sharechat{
+  max-width: fit-content;
+    margin: 0px  auto !important;
+}
+.soci{
+  padding-bottom: 20px;
+ 
+}.boo{
+  padding: 0.9375rem 35px !important ;
+}
+.form-horizontal .row{
+  padding: 0.3rem 0 !important;
+
+}
+.card-body{
+  height: 50vh;
+  display: flex;
+}
+.comingsoon{
+  font-size: 10vmin;
+}
+
+
+
+@media(min-width:427px){
+  .card{
+    max-width: 65%;
+    margin: 0 auto;
   }
-  .alert{
-    z-index: 2;
+
+ 
+}
+@media(max-width:426px){
+  .comingsoon{
+    font-size: 7vmin;;
   }
+}
 </style>
 </head>
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="rose" data-background-color="black" data-image="assets/img/sidebar-1.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+      <div class="sidebar" data-color="rose" data-background-color="black" data-image="assets/img/sidebar-1.jpg">
+        <!--
+          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+  
+          Tip 2: you can also add an image using data-image tag
+      -->
+        <div class="logo"><a href="https://givemycertificate.com/" class="simple-text logo-mini">
+            U
+          </a>
 
-        Tip 2: you can also add an image using data-image tag
-    -->
-      <div class="logo"><a href="https://givemycertificate.com/" class="simple-text logo-mini">
-          U
-        </a>
-        <a href="https://givemycertificate.com/" class="simple-text logo-normal">
-          Give my Certificate
-        </a></div>
-      <div class="sidebar-wrapper">
-        <div class="user">
-          <div class="photo">
-            <img src="assets/img/faces/avatar.jpg" />
-          </div>
-          <div class="user-info">
-            <a data-toggle="collapse" href="#collapseExample" class="username">
-              <span>
-                Tania Andrew
-                <b class="caret"></b>
-              </span>
-            </a>
-            <div class="collapse" id="collapseExample">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="myprofile.html">
-                    <span class="sidebar-mini"> MP </span>
-                    <span class="sidebar-normal"> My Profile </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="user.html">
-                    <span class="sidebar-mini"> EP </span>
-                    <span class="sidebar-normal"> Edit Profile </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span class="sidebar-mini"> S </span>
-                    <span class="sidebar-normal"> Settings </span>
-                  </a>
-                </li>
-              </ul>
+          <a href="https://givemycertificate.com/" class="simple-text logo-normal">
+            Give my Certificate
+
+          </a></div>
+        <div class="sidebar-wrapper">
+          <div class="user">
+            <div class="photo">
+              <img src="assets/img/faces/ravi.jpg" />
+            </div>
+            <div class="user-info active">
+              <a data-toggle="collapse" href="#collapseExample" class="username">
+                <span>
+                  Ravi Goswami
+                  <b class="caret"></b>
+                </span>
+              </a>
+              <div class="collapse" id="collapseExample">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="myprofile.html">
+                      <span class="sidebar-mini"> MP </span>
+                      <span class="sidebar-normal"> My Profile </span>
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="user.html">
+                      <span class="sidebar-mini"> EP </span>
+                      <span class="sidebar-normal"> Edit Profile </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="sidebar-mini"> S </span>
+                      <span class="sidebar-normal"> Settings </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <ul class="nav">
-            <li class="nav-item active ">
-                <a class="nav-link " href="dashboard.html">
-                  <i class="material-icons">apps</i>
-                  <p> dashboard
-                  </p>
-                </a>
-              </li>
-
-          <li class="nav-item ">
-            <a href="manage-certificate.html" class="nav-link">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              <p> Manage Certificates</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a href="upcoming-events.html" class="nav-link">
-              <i class="fa fa-id-card" aria-hidden="true"></i>
-              <p> Upcoming Events</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a href="internship.html" class="nav-link">
-             <i class="fa fa-laptop" aria-hidden="true"></i>
-              <p> Internship</p>
-            </a>
-          </li>
+          <ul class="nav">
+              <li class="nav-item  ">
+                  <a class="nav-link collapsed" href="dashboard.html">
+                    <i class="material-icons">apps</i>
+                    <p> dashboard
+                   
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="manage-certificate.html" class="nav-link">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <p> Manage Certificates</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="upcoming-events.html" class="nav-link">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p> Upcoming Events</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="internship.html" class="nav-link">
+                   <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <p> Internship</p>
+                  </a>
+                </li>
+            
+  
           
-
-        
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -142,7 +158,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+            <a class="navbar-brand" href="javascript:;">Internship</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -160,7 +176,6 @@ The above copyright notice and this permission notice shall be included in all c
                 </button>
               </div>
             </form>
-            
             <ul class="navbar-nav">
                 
                 <li class="nav-item dropdown">
@@ -179,14 +194,14 @@ The above copyright notice and this permission notice shall be included in all c
                     <a class="dropdown-item" href="#">Another One</a>
                   </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown ">
+                  <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <i class="material-icons">person</i>
                     <p class="d-lg-none d-md-block">
                       Account
                     </p>
                   <div class="ripple-container"></div></a>
-                  <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdownProfile">
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                     <a class="dropdown-item" href="#">Profile</a>
                     <a class="dropdown-item" href="#">Settings</a>
                     <div class="dropdown-divider"></div>
@@ -194,101 +209,56 @@ The above copyright notice and this permission notice shall be included in all c
                   </div>
                 </li>
               </ul>
-    
+          
           </div>
         </div>
       </nav>
       <!-- End Navbar -->
       <div class="content">
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-            <div class="col-md-6">
+        <div class="container-fluid">
+          <div class="row profile">
+            <div class="col-md-12 ">
               <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">Notifications Style</h4>
+                <div class="card-header card-header-icon card-header-rose">
+                  <div class="card-icon">
+                    <i class="material-icons">perm_identity</i>
+                  </div>
+                  <h4 class="card-title">Internship -
+                    <small class="category">2020</small>
+                  </h4>
                 </div>
                 <div class="card-body">
-                    <div class="card card-stats z-depth-3">
-                        <div class="card-header card-header-rose card-header-icon">
-                          <div class="card-icon">
-                            <i class="material-icons">equalizer</i>
-                          </div>
-                          <p class="card-category">Number Of Certificates</p>
-                          <h3 class="card-title">75.521</h3>
-                        </div>
-                        <div class="card-footer">
-                          <div class="stats">
-                            <i class="material-icons">local_offer</i> Tracked from Google Analytics
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card card-stats z-depth-3">
-                          <div class="card-header card-header-success card-header-icon">
-                            <div class="card-icon">
-                              <i class="material-icons">store</i>
-                            </div>
-                            <p class="card-category">Upcoming Events</p>
-                            <h3 class="card-title">34,245</h3>
-                          </div>
-                          <div class="card-footer">
-                            <div class="stats">
-                              <i class="material-icons">date_range</i> Last 24 Hours
-                            </div>
-                          </div>
-                        </div>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">Notification states</h4>
-                </div>
-                <div class="card-body noti">
-                    <div class="alert alert-rose alert-with-icon" data-notify="container">
-                        <i class="material-icons" data-notify="icon">notifications</i>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <i class="material-icons">close</i>
-                        </button>
-                        <span data-notify="message">This is a notification with close button and icon and is made with ".alert-rose". You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-                      </div>
-                      <div class="alert alert-success alert-with-icon" data-notify="container">
-                          <i class="material-icons" data-notify="icon">notifications</i>
-                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <i class="material-icons">close</i>
-                          </button>
-                          <span data-notify="message">This is a notification with close button and icon and is made with ".alert-rose". You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                        <p class="text-muted noo  m-0 p-0 text-center">No New Notification</p></div>
+                  <div class="container d-flex align-items-center justify-content-center">
+                    <p class=" text-muted comingsoon ">Coming Soon! <i class="fa fa-fire text-danger" aria-hidden="true"></i></p>
+                  </div>
+                  </div>
+                
 
+                      </div>
+                    </div>
+                    </div>
+                    
+                   
+                    <div class="clearfix"></div>
+                 
                 </div>
-              </div>
+               
+     
+        </div>
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="copyright float-right">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear())
+              </script> Give My Certificate<a href="https://www.givemycertificate.com" target="_blank"> Terms Privacy Policy</a> All right reserved.
+             
             </div>
-
-             </div>
-            
-        
-      
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="container-fluid">
-         
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script> Give My Certificate<a href="https://www.givemycertificate.com" target="_blank"> Terms Privacy Policy</a> All right reserved.
-          </div>
-          </div>
-        </div>
-      </footer>
+            </div>
+          </footer>
+     
     </div>
-  </div>
+ 
 
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js"></script>
@@ -307,8 +277,11 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
   <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
   <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+    <script src="../../assets/js/plugins/bootstrap-selectpicker.js"></script>
   <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
   <script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+  <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
   <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
   <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
   <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
@@ -506,21 +479,18 @@ The above copyright notice and this permission notice shall be included in all c
   </script>
   <script>
     $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      md.initDashboardPageCharts();
-
-      md.initVectorMap();
-        var elmnt = document.getElementById(".noti");
-        if(elmnt<=250){
-          $(".noo").css("display","block");
-        }
-        var txt = "Height including padding and border: " + elmnt.offsetHeight + "px<br>";
-        txt += "Width including padding and border: " + elmnt.offsetWidth + "px";
-        document.getElementById("demo").innerHTML = txt;
-
+      md.checkFullPageBackgroundImage();
     });
   </script>
-
+    <script>
+        $(document).ready(function() {
+          // initialise Datetimepicker and Sliders
+          md.initFormExtendedDatetimepickers();
+          if ($('.slider').length != 0) {
+            md.initSliders();
+          }
+        });
+      </script>
 </body>
 
 </html>
